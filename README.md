@@ -15,3 +15,17 @@ b. Analysis of Heapsort Algorithm
         Sorting the heap takes O(n log n).
         Thus, the overall time complexity of heapsort is O(n log n).
         The space complexity is O(1), as heapsort is an in-place algorithm.
+
+
+b. Analysis of Kruskal's Algorithm
+
+    Sorting Edges:
+        Sorting the edges by their weight takes O(E log E) time, where E is the number of edges.
+
+    Union-Find Operations:
+        The find and union operations take O(α(V)) time, where α(V) is the inverse Ackermann function, which is nearly constant for practical input sizes.
+        Since we perform at most E find-union operations, the total time for these operations is O(E α(V)).
+
+    Overall Time Complexity:
+        The overall time complexity of Kruskal’s algorithm is dominated by the sorting step: O(E log E).
+        The space complexity is O(V + E) due to the storage for the disjoint-set data structure and the edges.
